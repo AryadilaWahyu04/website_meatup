@@ -149,7 +149,7 @@
   
   <section class="Lokasi" id="Lokasi"><br>
       <h3>Lokasi</h3>
-      <iframe style="display: block; margin-left: auto; margin-right: auto;" allowfullscreen="" frameborder="0" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5595.833710540271!2d109.23451616500648!3d-7.370484523356614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655f9dbea632b9%3A0xd2a19061befda2b!2sLaqosta%20Farm!5e0!3m2!1sid!2sid!4v1662815629181!5m2!1sid!2sid" data-aos="fade-left" data-aos-duration="1000" width="50%" height="300" style="box-shadow: 0px 0px 10px rgb(0,0,0);" class="aos-init aos-animate"></iframe> <br>
+      <iframe class="centerimg" allowfullscreen="" frameborder="0" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5595.833710540271!2d109.23451616500648!3d-7.370484523356614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655f9dbea632b9%3A0xd2a19061befda2b!2sLaqosta%20Farm!5e0!3m2!1sid!2sid!4v1662815629181!5m2!1sid!2sid" data-aos="fade-left" data-aos-duration="1000" width="50%" height="300px;" style="box-shadow: 0px 0px 10px rgb(0,0,0);" class="aos-init aos-animate"></iframe> <br>
       <label class="labelket"> 1. Jalankan Website Smart Blindes<a href="">[Cari Disini]</a></label>
       <br></br>
   </section>
@@ -246,7 +246,7 @@
   color: red;
 }
 .banner{
-  background: url("images/banner.png") no-repeat;
+  background: url("images/Benner.png") no-repeat;
   opacity:0.7;
   height: 70vh;
   background-size: cover;
@@ -334,6 +334,19 @@
   .icon.hide{
     display: none;
   }
+  .navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+.navbar.sticky{
+  background:#D4D6D7;
+  color: white;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
   .navbar .menu-list{
     position: fixed;
     height: 100vh;
@@ -365,11 +378,11 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 200px;
+  height: 300px;
   width: 90%;
   }
   .banner{
-  background: url("images/banner.png") no-repeat;
+  background: url("images/Banner.png") no-repeat;
   background-position: center;
   background-size:100% 50%;
   opacity:0.7;
@@ -377,9 +390,10 @@
   }
   .column {
   margin:0 0 3% 3% ;
-  width: 90%;
+  width: 80%;
   border-radius: 10px;
   height: 275px; /* Hanya untuk contoh */
+  text-align: center;
   }
 /* Hapus floats setelah columns */
   .label {
@@ -393,7 +407,7 @@
   }
   .btn{
   width: 90%;
-  height: 50px;
+  height: 40px;
   font-size: 12px;
   }
   h4{
@@ -402,8 +416,8 @@
   text-align: center;
   }
   .gambar-menu{
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
   align-items: center;
   }
   .keterangan-menu{
