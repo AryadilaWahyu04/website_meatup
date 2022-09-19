@@ -4,6 +4,20 @@
   margin-right: 5%;
   margin-left: 5%;
 }
+.youtube{
+width:60%;
+height:300px;
+display:block; 
+margin-left: auto; 
+margin-right: auto;
+}
+.lokasi{
+width:60%;
+height:300px;
+display:block; 
+margin-left: auto; 
+margin-right: auto;
+}
 .centerimg {
   display: block;
   margin-left: auto;
