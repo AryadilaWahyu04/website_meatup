@@ -1,213 +1,218 @@
 <!--HTML-->
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Meat Up Idn</title>
-  <link rel="stylesheet" type="text/css" href="style/style.css">
-  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Meat Up Idn</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
+  </head>
 
-<body style = "background-color:#C3EFC3">
-  <nav class="navbar">
-    <div class="content">
-      <div class="logo">
-        <a href="#Beranda"><image src="images/Logo_Lingkaran.png" style="height: 40px; width:40px;"></a>
-      </div>
-      <ul class="menu-list">
-        <div class="icon cancel-btn">
-          <i class="fas fa-times"></i>
+  <body style = "background-color:#C3EFC3">
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="#Beranda"><image src="images/Logo_Lingkaran.png" style="height: 40px; width:40px"></a>
         </div>
-        <li><a href="#Beranda">Beranda</a></li>
-        <li><a href="#Menu">Menu</a></li>
-        <li><a href="#Fitur">Fitur</a></li>
-        <li><a href="#Testimoni">Testimoni</a></li>
-        <li><a href="#Download">Apps</a></li>
-      </ul>
-      <div class="icon menu-btn">
-        <i class="fas fa-bars"></i>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="#Beranda">Beranda</a></li>
+          <li><a href="#Menu">Menu</a></li>
+          <li><a href="#Fitur">Fitur</a></li>
+          <li><a href="#Testimoni">Testimoni</a></li>
+          <li><a href="#Download">Apps</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
       </div>
-    </div>
-  </nav>
-  <div class="banner"></div>
+    </nav>
+    <div class="banner"></div>
 
-  <script>
-    const body = document.querySelector("body");
-    const navbar = document.querySelector(".navbar");
-    const menuBtn = document.querySelector(".menu-btn");
-    const cancelBtn = document.querySelector(".cancel-btn");
-    menuBtn.onclick = ()=>{
-      navbar.classList.add("show");
-      menuBtn.classList.add("hide");
-      body.classList.add("disabled");
-    }
-    cancelBtn.onclick = ()=>{
-      body.classList.remove("disabled");
-      navbar.classList.remove("show");
-      menuBtn.classList.remove("hide");
-    }
-    window.onscroll = ()=>{
-      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-    }
-  </script>
-
-  <section class="Beranda" id="Beranda">
-    <br><br>
-    <h3>Tentang Meat Up<h3><br>
-    <iframe class="centerimg" width="560" height="360" src="https://www.youtube.com/embed/9rngAOMpw7A?rel=0&amp;vq=hd1080p60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-
-    <!--<img class="centerimg" src="images/Banner_Meatup.png" style="width: 1200px; height: 400px;"><br><br>-->
-    <label class="labelket">Meat Up Apps adalah sebuah aplikasi mobile yang digunakan untuk mempermudah pelanggan dan mempercepat dalam memesan dan memproses makanan burger.</label>
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = ()=>{
+        navbar.classList.add("show");
+        menuBtn.classList.add("hide");
+        body.classList.add("disabled");
+      }
+      cancelBtn.onclick = ()=>{
+        body.classList.remove("disabled");
+        navbar.classList.remove("show");
+        menuBtn.classList.remove("hide");
+      }
+      window.onscroll = ()=>{
+        this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+      }
+    </script>
+    <br> </br>  
+    <section class="Beranda" id="Beranda">
+      <h3 class="judul">Tentang Meat Up</h3>
+      <iframe style="width:75%; height:300px; display:block; margin-left: auto; margin-right: auto;" src="https://www.youtube.com/embed/9rngAOMpw7A?rel=0&amp;vq=hd1080p60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+      <p class="keterangan"> Smart Blindes adalah hasil karya projek akhir yang dibuat oleh kelompok 7 kelas Al-Khawarizmi Orbit Future Academy yang dapat membantu seseorang penderita tuna netra.
+      cara kerjanya adalah mengarahkan kamera ke segala arah untuk menemukan objek dan nantinya akan muncul suara sebagai petunjuk
+      </p>
+    </section>
     <br> </br>
-    <!--<video width="100%" height="100%" muted playsinline preload="metadata"  src="https://www.youtube.com/embed/HXDD7-EnGBY"></video>-->
-    <br></br>
-  </section>
 
-  <section class="Menu" id="Menu">
-    <div class="row">
-      <h3>Menu Makanan<h3>
-      <div class="column">
-        <div class="text-center"><br>
-          <img src="images/BURGER_SINGLE-remove.png" class="gambar-menu"><br><br>
-          <h4>Burger Single</h4>
-          <label class="coret">Rp 30.000</label><br>
-          <label class="harga">Rp 25.000</label><br><br>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Lihat Gambar</button></div>
+    <section class="Menu" id="Menu">
+      <h3 class="judul">Menu Makanan</h3>
+      <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-3 pt-5 pb-5">
+              <img src="images/BURGER_TRIPLE.png" class="gambar-menu"><br><br>
+              <h4>Burger Triple</h4>
+              <label class="coret">Rp 40.000</label><br>
+              <label class="harga">Rp 35.000</label><br><br>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Lihat Gambar</button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 pt-5 pb-5">
+              <img src="images/BURGER_TRIPLE.png" class="gambar-menu"><br><br>
+              <h4>Burger Triple</h4>
+              <label class="coret">Rp 40.000</label><br>
+              <label class="harga">Rp 35.000</label><br><br>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Lihat Gambar</button>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 pt-5 pb-5">
+              <img src="images/BURGER_TRIPLE.png" class="gambar-menu"><br><br>
+              <h4>Burger Triple</h4>
+              <label class="coret">Rp 40.000</label><br>
+              <label class="harga">Rp 35.000</label><br><br>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Lihat Gambar</button>
+            </div>
+          </div>
       </div>
-      <div class="column">
-        <div class="text-center"><br>
-          <img src="images/BURGER_DOUBLE-remove.png" class="gambar-menu"><br><br>
-          <h4>Burger Double</h4>
-          <label class="coret">Rp 35.000</label><br>
-          <label class="harga">Rp 30.000</label><br><br>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Lihat Gambar</button>
+      <p class="keterangan" style="text-align: center;"><a href="#Download">Lebih Banyak...</a></p>
+    </section><br><br>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Burger Single</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div><br>
+              <img class="centerimg" src="images/BURGER_SINGLE-remove.png" style= "width: 300px; height:250px;"><br><br>
+              <label style="text-align:center;">Burger Kaya Daging Spesial Meat-Up Dengan 1 Patty</label><br><br>
+          </div>
         </div>
       </div>
-      <div class="column">
-        <div class="text-center"><br>
-          <img src="images/BURGER_TRIPLE.png" class="gambar-menu"><br><br>
-          <h4>Burger Triple</h4>
-          <label class="coret">Rp 40.000</label><br>
-          <label class="harga">Rp 35.000</label><br><br>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Lihat Gambar</button></div>
-      </div>
-        <label class="labelket"><a href="#Download" style="text-align:center;">Lihat Lebih Banyak</a></label>
-    </div>
-  </section><br><br>
-
-  <!-- Modal -->
-  <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Burger Single</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div><br>
-          <img class="centerimg" src="images/BURGER_SINGLE-remove.png" style= "width: 350px; height:300px;"><br><br>
-           <label class="keterangan-menu">Burger Kaya Daging Spesial Meat-Up Dengan 1 Patty</label><br><br>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Burger Double</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div><br>
-          <img class="centerimg" src="images/BURGER_DOUBLE-remove.png" style="width:350px; height:300px;"><br><br>
-          <label class="keterangan-menu">Burger Kaya Daging Spesial Meat-Up Dengan 2 Patty</label><br><br>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Burger Triple</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div><br>
-          <img class="centerimg" src="images/BURGER_TRIPLE-remove.png" style="width:350px; height:300px;"><br><br>
-          <label class="keterangan-menu">Burger Kaya Daging Spesial Meat-Up Dengan 3 Patty</label><br><br>
-      </div>
-    </div>
-  </div>
-
-  <section class="Fitur" id="Fitur">
-    <h3>Fitur Aplikasi</h3>
-      <img src="images/banner.png" class="centerimg">
-      <label class="labelket"> 1. Jalankan Website Smart Blindes</label>
-      <br></br>
-  </section><br>
-  
-  <section class="Testimoni" id="Testimoni">
-    <div class="row">
-      <h3>Testimoni<h3>
-      <div class="column">
-        <div class="text-center"><br>
-          <img src="images/BURGER_SINGLE-remove.png" class="gambar-menu"><br><br>
-          <h4>Burger Single</h4>
-          <label class="coret">Rp 30.000</label><br>
-          <label class="harga">Rp 25.000</label><br><br>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Lihat Gambar</button></div>
-      </div>
-      <div class="column">
-        <div class="text-center"><br>
-          <img src="images/BURGER_DOUBLE-remove.png" class="gambar-menu"><br><br>
-          <h4>Burger Double</h4>
-          <label class="coret">Rp 35.000</label><br>
-          <label class="harga">Rp 30.000</label><br><br>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Lihat Gambar</button>
+      <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Burger Double</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div><br>
+              <img class="centerimg" src="images/BURGER_DOUBLE-remove.png" style="width:300px; height:250px;"><br><br>
+              <label style="text-align:center;">Burger Kaya Daging Spesial Meat-Up Dengan 2 Patty</label><br><br>
+          </div>
         </div>
       </div>
-      <div class="column">
-        <div class="text-center"><br>
-          <img src="images/BURGER_TRIPLE.png" class="gambar-menu"><br><br>
-          <h4>Burger Triple</h4>
-          <label class="coret">Rp 40.000</label><br>
-          <label class="harga">Rp 35.000</label><br><br>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Lihat Gambar</button></div>
-  </section><br><br>
-  
-  <section class="Lokasi" id="Lokasi"><br>
-      <h3>Lokasi</h3>
-      <iframe allowfullscreen="" frameborder="0" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5595.833710540271!2d109.23451616500648!3d-7.370484523356614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655f9dbea632b9%3A0xd2a19061befda2b!2sLaqosta%20Farm!5e0!3m2!1sid!2sid!4v1662815629181!5m2!1sid!2sid" data-aos="fade-left" data-aos-duration="1000" width="90%" height="300px;" style="box-shadow: 0px 0px 10px rgb(0,0,0); display:block; margin-left: auto; margin-right: auto;" class="aos-init aos-animate"></iframe> <br>
-      <!--<label class="labelket"> 1. Jalankan Website Smart Blindes<a href="">[Cari Disini]</a></label>-->
-      <br>
-  </section>
-  <br> </br>
+      <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Burger Triple</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div><br>
+              <img class="centerimg" src="images/BURGER_TRIPLE-remove.png" style="width:300px; height:250px;"><br><br>
+              <label style="text-align:center;">Burger Kaya Daging Spesial Meat-Up Dengan 3 Patty</label><br><br>
+          </div>
+        </div>
+      </div><br>
+      
 
-  <section class="Download" id="Download">
-    <h3>Download</h3>
-    <img src="images/banner.png" class="centerimg"><br><br>
-    <div class="text-center">
-        <a href="https://drive.google.com/uc?export=download&id=1Aft8XLA2MUTgG8naTOp_kX9Qm5GlH1vL"><button type="button" class="btn btn-primary">Download Aplikasi</button></a>
+    <section class="Fitur" id="Fitur">
+        <h3 class="judul">Fitur</h3>
+        <p class="keterangan"> Website Ini dapat digunakan oleh seseorang yang menderita gangguan penglihatan atau tuna netra dengan harapan dapat membantu aktivitas sehari-hari</p>
+        <img src="images/benner.png" class="centerimg">
+        <br></br>
+    </section>
+
+    <section class="Testimoni" id="Testimoni">
+      <h3 class="judul">Testimoni</h3>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-3 pt-5 pb-5">
+            <img src="images/Wahyu.png" class="gambar-menu" style="border-radius:10px;"><br><br>
+              <label class="labelket" style="font-weight:bold;">Dian Budi Prasetyo</label><br><br>
+              <label class="labelket" style="font-size:15px;">Saosnya Lumayan Pedas Enak cocok buat cemilan</label><br><br>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-empty" style="color:yellow;" ></span>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 pt-5 pb-5">
+            <img src="images/Wahyu.png" class="gambar-menu" style="border-radius:10px;"><br><br>
+              <label class="labelket" style="font-weight:bold;">Dian Budi Prasetyo</label><br><br>
+              <label class="labelket"  style="font-size:15px;">Daging Burgernya Tebal, Lezat Enak cobain deh.</label><br><br>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-empty"></span>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 pt-5 pb-5">
+            <img src="images/Wahyu.png" class="gambar-menu" style="border-radius:10px;"><br><br>
+              <label class="labelket" style="font-weight:bold;">Dian Budi Prasetyo</label><br><br>
+              <label class="labelket"  style="font-size:15px;">Rasanya Luar Biasa Enak dijamin nagih</label><br><br>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-half-empty"></span>
+          </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="Lokasi" id="Lokasi"><br>
+      <h3 class="judul">Lokasi</h3>
+      <iframe allowfullscreen="" frameborder="0" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5595.833710540271!2d109.23451616500648!3d-7.370484523356614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655f9dbea632b9%3A0xd2a19061befda2b!2sLaqosta%20Farm!5e0!3m2!1sid!2sid!4v1662815629181!5m2!1sid!2sid" data-aos="fade-left" data-aos-duration="1000" width="75%" height="300px;" style="box-shadow: 0px 0px 10px rgb(0,0,0); display:block; margin-left: auto; margin-right: auto;" class="aos-init aos-animate"></iframe> <br>    <br>
+    </section>
+
+    <section class="Download" id="Download">
+      <h3 class="judul">Download</h3>
+      <img src="images/banner.png" class="centerimg"><br><br>
+      <div class="text-center">
+        <a href="https://drive.google.com/uc?export=download&id=1Aft8XLA2MUTgG8naTOp_kX9Qm5GlH1vL"><button type="button" class="btn btn-primary" style="align-items: center; width:50%">Download Aplikasi</button></a><br>
       </div>
-  </section>
-</body>
+    </section><br><br>
 
-  <br></br>
-  <footer>
-      <a href="https://www.instagram.com/meatupidn/">
-      <img src="images/instagram.png" class="footerimg"></a>
-      <a href="https://food.grab.com/id/id/restaurant/laqosta-farm-caffe-rempoah-delivery/6-CY22GUCTEJKYJX">
-      <img src="images/grab_food.png" class="footerimg"></a>
-      <a href="https://gofood.co.id/purwokerto/restaurant/laqosta-farm-rempoah-900a983f-b001-4f79-a6c6-ee224233b280">
-      <img src="images/Gofood.png" class="footerimg"></a>
-      <a href="https://api.whatsapp.com/send/?phone=%2B6285799666032&text&type=phone_number&app_absent=0">
-      <img src="images/whatsapp.png" class="footerimg"></a><br>
-      <label class="labelket">Development by : Meat Up Idn</label> 
+  </body>
+
+
+
+  <footer><br>
+    <a href="https://www.instagram.com/meatupidn/">
+    <img src="images/instagram.png" class="footerimg"></a>
+    <a href="https://food.grab.com/id/id/restaurant/laqosta-farm-caffe-rempoah-delivery/6-CY22GUCTEJKYJX">
+    <img src="images/grab_food.png" class="footerimg"></a>
+    <a href="https://gofood.co.id/purwokerto/restaurant/laqosta-farm-rempoah-900a983f-b001-4f79-a6c6-ee224233b280">
+    <img src="images/Gofood.png" class="footerimg"></a>
+    <a href="https://api.whatsapp.com/send/?phone=%2B6285799666032&text&type=phone_number&app_absent=0">
+    <img src="images/whatsapp.png" class="footerimg"></a><br>
+    <label class="labelket">Development by : Meat Up Idn</label> 
   </footer>
 </html>
 
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -236,7 +241,7 @@
   position: fixed;
   width: 100%;
   z-index: 2;
-  padding: 25px 0;
+  padding: 15px 0;
   transition: all 0.3s ease;
 }
 .navbar.sticky{
@@ -257,6 +262,7 @@
 }
 .navbar .menu-list{
   display: inline-flex;
+  text-decoration: none;
 }
 .menu-list li{
   list-style: none;
@@ -265,27 +271,26 @@
   color: black;
   font-size: 18px;
   font-weight: bold;
-  margin-left: 25px;
+  margin-left: 15px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 .menu-list li a:hover{
-  color: red;
+  color: #007bff;
 }
 .banner{
-  background: url("images/benner.png") no-repeat;
+  background: url("images/Benner.png") no-repeat;
   opacity:0.7;
-  height: 70vh;
+  height: 80vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
-*/
 .about{
   padding: 30px 0;
 }
 .about .title{
-  font-size: 28px;
+  font-size: 38px;
   font-weight: 700;
 }
 .about p{
@@ -303,80 +308,24 @@
   right: 30px;
   top: 20px;
 }
-.imgim {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-.btn{
-  width: 50%;
-  height: 50px;
-  font-size: 15px;
-}
-.centerimg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 300px;
-  width: 50%;
-}
-.column {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 28%;
-  border-radius: 10px;
-  height: 360px; /* Hanya untuk contoh */
-  background-color: #ccc;
-}
-.row{
-  padding-left: 10%;
-}
-.labelket{
-  padding-left: 5%;
-  padding-right: 5%;
-  text-align: justify;
-}
 @media (max-width: 1230px) {
   .content{
     padding: 0 60px;
-  }
-  .banner {
-  background: url("images/banner.png") no-repeat;
-  background-position: center;
-  background-size:100% 50%;
-  opacity:0.7;
-  height: 40vh;
   }
 }
 @media (max-width: 1100px) {
   .content{
     padding: 0 40px;
   }
-  .banner {
-  background: url("images/banner.png") no-repeat;
-  background-position: center;
-  background-size:100% 50%;
-  opacity:0.7;
-  height: 40vh;
-  }
 }
 @media (max-width: 900px) {
   .content{
     padding: 0 30px;
   }
-  .banner {
-  background: url("images/banner.png") no-repeat;
-  background-position: center;
-  background-size:100% 50%;
-  opacity:0.7;
-  height: 40vh;
-  }
 }
 @media (max-width: 868px) {
   .navbar .logo a{
-  margin-right: 0;
+  margin-right: 100px;
   color: #fff;
   text-decoration: none;
   }
@@ -388,13 +337,6 @@
   text-decoration: none;
   transition: all 0.3s ease;
   }
-  .centerimg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 200px;
-  width: 90%;
-  }
   .banner{
   background: url("images/banner.png") no-repeat;
   background-position: center;
@@ -403,54 +345,44 @@
   height: 40vh;
   }
   .row{
-  padding-left: 10%;
+  padding-left:20%;
   }
-  .column {
-  margin:0 0 3% 3% ;
-  width: 80%;
+  .col-md-3 {
+  text-align: center;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 75%;
+  height: 325px;
+  border: 1px;
   border-radius: 10px;
-  height: 275px; /* Hanya untuk contoh */
-  text-align: center;
+  background-color: #fff;
   }
-  .label {
-  font-size: 15px;
-  text-align: justify;
-  padding: 25px;
-  }
-  .labelket{
-    text-align: justify;
+  .keterangan{
     font-size: 15px;
+    justify-content: left;
   }
-  .btn{
-  width: 90%;
-  height: 40px;
-  font-size: 12px;
-  }
-  h4{
-  font-weight: bold;
-  font-size: 12px;
+  .judul {
+  font-size: 18px;
   text-align: center;
+  font-weight: bold;
+  }
+  .centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 200px;
   }
   .gambar-menu{
   width: 75px;
   height: 75px;
   align-items: center;
   }
-  .keterangan-menu{
-  font-size: 15px;
-  text-align: center;
-  padding-left: 0px;
-  }
-  .harga{
-  font-weight: bold;
-  font-size: 12px;
-  text-align: center;
-  }
-  .coret {
-  font-size: 12px;
-  text-decoration: line-through;
-  text-align: center;
-  padding-left: 0px;
+  .btn{
+    font-size: 15px;
+    width: 75%;
   }
   .footerimg{
   margin: 5px 5px 5px 5px;
