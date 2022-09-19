@@ -55,11 +55,11 @@
       window.onscroll = ()=>{
         this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
       }
-    </script>
+    </script><br>
     
     <section class="Beranda" id="Beranda">
       <h3 class="judul">Tentang Meat Up</h3>
-      <iframe style="width:80%; height:300px; display:block; margin-left: auto; margin-right: auto;" src="https://www.youtube.com/embed/9rngAOMpw7A?rel=0&amp;vq=hd1080p60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+      <iframe class="youtube" src="https://www.youtube.com/embed/9rngAOMpw7A?rel=0&amp;vq=hd1080p60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
       <p class="keterangan"> Smart Blindes adalah hasil karya projek akhir yang dibuat oleh kelompok 7 kelas Al-Khawarizmi Orbit Future Academy yang dapat membantu seseorang penderita tuna netra.
       cara kerjanya adalah mengarahkan kamera ke segala arah untuk menemukan objek dan nantinya akan muncul suara sebagai petunjuk
       </p>
@@ -182,7 +182,7 @@
 
     <section class="Lokasi" id="Lokasi"><br>
       <h3 class="judul">Lokasi</h3>
-      <iframe allowfullscreen="" frameborder="0" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5595.833710540271!2d109.23451616500648!3d-7.370484523356614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655f9dbea632b9%3A0xd2a19061befda2b!2sLaqosta%20Farm!5e0!3m2!1sid!2sid!4v1662815629181!5m2!1sid!2sid" data-aos="fade-left" data-aos-duration="1000" width="80%" height="300px;" style="box-shadow: 0px 0px 10px rgb(0,0,0); display:block; margin-left: auto; margin-right: auto;" class="aos-init aos-animate"></iframe> <br><br>
+      <iframe class="lokasi" allowfullscreen="" frameborder="0" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5595.833710540271!2d109.23451616500648!3d-7.370484523356614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655f9dbea632b9%3A0xd2a19061befda2b!2sLaqosta%20Farm!5e0!3m2!1sid!2sid!4v1662815629181!5m2!1sid!2sid" data-aos="fade-left" data-aos-duration="1000" style="box-shadow: 0px 0px 10px rgb(0,0,0); class="aos-init aos-animate"></iframe> <br><br>
     </section>
 
     <section class="Download" id="Download">
@@ -197,7 +197,7 @@
 
 
 
-  <footer><br>
+  <footer>
     <a href="https://www.instagram.com/meatupidn/">
     <img src="images/instagram.png" class="footerimg"></a>
     <a href="https://food.grab.com/id/id/restaurant/laqosta-farm-caffe-rempoah-delivery/6-CY22GUCTEJKYJX">
@@ -281,10 +281,9 @@
 .banner{
   background: url("images/banner.png") no-repeat;
   opacity:0.7;
-  height: 80vh;
-  background-size: cover;
+  height: 60vh;
   background-position: center;
-  background-attachment: fixed;
+  background-size:100% 50%;
 }
 .about{
   padding: 30px 0;
@@ -329,7 +328,7 @@
 }
 @media (max-width: 868px) {
   .navbar .logo a{
-  margin-right: 50px;
+  margin-right: 20px;
   color: #fff;
   text-decoration: none;
   }
@@ -337,7 +336,7 @@
   color: black;
   font-size: 12px;
   font-weight: bold;
-  margin-left: 10px;
+  margin-left: 8px;
   text-decoration: none;
   transition: all 0.3s ease;
   }
@@ -347,6 +346,20 @@
   background-size:100% 50%;
   opacity:0.7;
   height: 40vh;
+  }
+  .youtube{
+  width:80%;
+  height:250px;
+  display:block; 
+  margin-left: auto; 
+  margin-right: auto;
+  }
+  .lokasi{
+  width:90%;
+  height:300px;
+  display:block; 
+  margin-left: auto; 
+  margin-right: auto;
   }
   .row{
   padding-left:20%;
